@@ -139,15 +139,25 @@
 \DeclareOption{ucd}{
   \renewcommand{\ucl@univ}{UCD}
   \renewcommand{\ucl@campus}{Davis}
+  \renewcommand{\ucl@univstreet}{One Shields Avenue}
+  \renewcommand{\ucl@univtown}{Davis, California 95616}
+  \DeclareOption{ce}{
   \renewcommand{\ucl@school}{College of Engineering}
   \renewcommand{\ucl@univstreet}{2064 Kemper Hall, One Shields Avenue}
   \renewcommand{\ucl@univtown}{Davis, California 95616}
+  }
   \DeclareOption{ece}{
     \dept{Department of Electrical and Computer Engineering}
     \renewcommand{\ucl@deptphone}{+1 (530) 752-0583}
     \renewcommand{\ucl@school}{College of Engineering}
     \renewcommand{\ucl@deptfax}{+1 (530) 752-8428}
     \renewcommand{\ucl@depturl}{http://www.ece.ucdavis.edu/}
+  }
+  \DeclareOption{esp}{
+    \dept{Department of Environmental Science and Policy}
+    \renewcommand{\ucl@deptphone}{}
+    \renewcommand{\ucl@deptfax}{+1 (530) 752-3350}
+    \renewcommand{\ucl@depturl}{http://desp.ucdavis.edu}
   }
 }
 
@@ -207,7 +217,7 @@
         LOS ANGELES\@ctrdot MERCED\@ctrdot RIVERSIDE\@ctrdot
         SAN DIEGO\@ctrdot SAN FRANCISCO\hspace\fill \\
         \rule[3pt]{4.55in}{0.25pt}} &
-      \parbox{0.75in}{\resizebox{0.75in}{!}{\includegraphics{ucsealnew.eps}}}
+      \parbox{0.75in}{\resizebox{0.75in}{!}{\includegraphics{ucsealnew}}}
       \parbox{1.6in}{\rule{1.6in}{0.25pt} \\
         \rule{0mm}{4pt}\hspace\fill
         \@svnrm SANTA BARBARA\@ctrdot SANTA CRUZ\hspace*{1pt} \\
@@ -252,7 +262,7 @@
     \fontfamily{ptm}\fontsize{8}{10}\selectfont
     \sc \ucl@dept\@spcdot\ucl@univstreet\@spcdot\ucl@univtown \\
     \fontfamily{ptm}\fontsize{8}{10}\selectfont
-    \sc Phone: \ucl@deptphone{\@spcdot}Fax: \ucl@deptfax\@spcdot\ucl@depturl
+    \sc Phone: \ucl@deptphone{\@spcdot}Fax: \ucl@deptfax{\@spcdot}\ucl@depturl
   \end{tabular}
 }
 
