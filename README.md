@@ -5,7 +5,7 @@
 3. Store a UC seal in a file (`ucsealnew.eps` for `xelatex` or `ucsealnew.pdf` for `pdflatex`) in this directory.
 4. Complile: `xelatex example` or `pdflatex example`
 
-As of 2016-04-11, you could obtain an eps seal [here](solarmuri.ssl.berkeley.edu/~welsch/public/software/ucsealnew.eps)
+As of 2016-04-11, you could obtain an eps seal [here](http://solarmuri.ssl.berkeley.edu/~welsch/public/software/ucsealnew.eps)
 this can be converted to pdf at the command line using `epstopdf`.
 
 
