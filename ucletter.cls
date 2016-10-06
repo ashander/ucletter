@@ -159,6 +159,19 @@
     \renewcommand{\ucl@deptfax}{+1 (530) 752-3350}
     \renewcommand{\ucl@depturl}{http://desp.ucdavis.edu}
   }
+  \DeclareOption{anthro}{
+    \dept{Department of Anthropology}
+    \renewcommand{\ucl@deptphone}{+1 (530) 752-0745}
+    \renewcommand{\ucl@deptfax}{+1 (530) 752-8885}
+    \renewcommand{\ucl@depturl}{http://anthropology.ucdavis.edu/}
+  }
+  \DeclareOption{abgg}{
+   \dept{Animal Behavior Graduate Group}
+    \renewcommand{\ucl@univstreet}{Graduate Group Complex, One Shields Avenue}
+    \renewcommand{\ucl@deptphone}{+1 (530) 752-2981}
+    \renewcommand{\ucl@deptfax}{+1 (530) 752-8822}
+    \renewcommand{\ucl@depturl}{http://anb.ucdavis.edu/}
+  }
 }
 
 \DeclareOption{nofrom}{
